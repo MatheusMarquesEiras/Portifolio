@@ -125,7 +125,7 @@ function App() {
       <header className="fixed top-0 w-full z-50 bg-[#060e20]/80 backdrop-blur-xl shadow-[0_0_40px_rgba(161,250,255,0.06)] border-b border-outline-variant/10">
         <nav className="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
           <div className="text-xl font-bold tracking-tighter text-[#dee5ff] font-headline uppercase">
-            {data.name.split(' ').slice(0, 1)} // 2026
+            MATHEUS EIRAS
           </div>
           <div className="hidden md:flex items-center gap-12">
             {navLinks.map((link) => (
@@ -200,7 +200,7 @@ function App() {
             <div className="px-8 max-w-7xl mx-auto">
               <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
                 <h2 className="text-4xl md:text-5xl font-headline font-bold tracking-tighter uppercase">TECNOLOGIAS</h2>
-                <p className="font-label text-sm uppercase tracking-widest text-outline">Matriz de Conhecimento Full Stack</p>
+                <p className="font-label text-sm uppercase tracking-widest text-outline">Matriz de Conhecimentos</p>
               </div>
               
               <div className="space-y-16">
@@ -234,7 +234,7 @@ function App() {
               <div className="flex justify-between items-baseline mb-16">
                 <h2 className="text-4xl md:text-5xl font-headline font-bold tracking-tighter uppercase">PROJETOS</h2>
                 <div className="h-px bg-outline-variant/30 flex-grow mx-8 hidden md:block"></div>
-                <span className="font-label text-sm uppercase tracking-[0.2rem] text-primary">Engenharia em Destaque</span>
+                <span className="font-label text-sm uppercase tracking-[0.2rem] text-primary">Projetos em Destaque</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                 {data.projects.map((project, i) => (
@@ -281,11 +281,11 @@ function App() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
                 {/* Academic Card */}
                 <div className="lg:col-span-7 bg-surface p-12 rounded-xl border border-outline-variant/10 shadow-2xl relative overflow-hidden group">
-                  <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
-                     <IconRenderer iconName="TbDeviceDesktop" className="text-9xl" />
+                  <div className="absolute top-12 right-12 opacity-30 group-hover:opacity-50 transition-opacity hidden md:block">
+                     <IconRenderer iconName="TbDeviceDesktop" className="text-8xl" />
                   </div>
                   <div className="relative z-10">
-                    <h3 className="text-2xl md:text-3xl font-headline font-bold mb-2">Graduação em Ciência da Computação</h3>
+                    <h3 className="text-2xl md:text-3xl font-headline font-bold mb-2 max-w-[80%]">Graduação em Ciência da Computação</h3>
                     <p className="text-xl text-primary font-medium italic mb-8">
                       {data.about.education?.includes(' - ') ? data.about.education.split(' - ')[1] : data.about.education}
                     </p>
@@ -335,9 +335,9 @@ function App() {
                       href={data.contact.huggingface}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-6 py-3 border border-outline-variant/30 text-on-surface rounded-lg font-headline font-bold text-xs uppercase tracking-widest hover:bg-surface-bright transition-all"
+                      className="flex items-center gap-3 px-6 py-3 bg-[#FFD21E] text-black rounded-lg font-headline font-bold text-xs uppercase tracking-widest hover:brightness-110 transition-all border border-[#FFD21E]"
                     >
-                      <IconRenderer iconName="SiHuggingface" className="text-xl" />
+                      <IconRenderer iconName="SiHuggingface" className="text-xl text-black" />
                       HUGGINGFACE
                     </a>
                   </div>
@@ -350,58 +350,35 @@ function App() {
         {/* Contact Section */}
         <section className="px-8 pb-32 scroll-mt-32" id="contact">
           <div className={getRevealClass('contact')}>
-            <div className="max-w-7xl mx-auto bg-surface-container border border-outline-variant/10 rounded-xl overflow-hidden shadow-[0_0_80px_rgba(161,250,255,0.03)]">
-              <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="p-12 lg:p-20 border-b lg:border-b-0 lg:border-r border-outline-variant/10">
-                  <h2 className="text-4xl md:text-5xl font-headline font-bold tracking-tighter mb-8 italic">ENTRE EM <br/>CONTATO</h2>
-                  <div className="space-y-6">
-                    <div className="flex items-center gap-4 group">
-                      <div className="w-12 h-12 rounded-lg bg-surface-bright flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
-                        <span className="material-symbols-outlined">mail</span>
-                      </div>
-                      <div>
-                        <p className="text-[10px] font-label uppercase tracking-widest text-outline">E-mail</p>
-                        <p className="font-headline font-bold">{data.contact.email}</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-4 group">
-                      <div className="w-12 h-12 rounded-lg bg-surface-bright flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
-                        <span className="material-symbols-outlined">call</span>
-                      </div>
-                      <div>
-                        <p className="text-[10px] font-label uppercase tracking-widest text-outline">Telefone</p>
-                        <p className="font-headline font-bold">{data.contact.phone}</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-4 group">
-                      <div className="w-12 h-12 rounded-lg bg-surface-bright flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
-                        <span className="material-symbols-outlined">share_location</span>
-                      </div>
-                      <div>
-                        <p className="text-[10px] font-label uppercase tracking-widest text-outline">Localidade</p>
-                        <p className="font-headline font-bold">{data.contact.location}</p>
-                      </div>
-                    </div>
+            <div className="max-w-7xl mx-auto bg-surface-container border border-outline-variant/10 rounded-xl overflow-hidden shadow-[0_0_80px_rgba(161,250,255,0.03)] p-12 lg:p-20">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-6xl font-headline font-bold tracking-tighter mb-4 italic uppercase">ENTRE EM CONTATO</h2>
+                <p className="font-label text-sm uppercase tracking-widest text-primary">Estou aberto para novas conexões e projetos.</p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href={`mailto:${data.contact.email}`} className="flex flex-col items-center p-8 bg-surface-bright/50 rounded-xl border border-outline-variant/5 hover:border-primary/30 hover:bg-surface-bright transition-all group">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform mb-6">
+                    <span className="material-symbols-outlined text-3xl">mail</span>
                   </div>
-                </div>
-                <div className="p-12 lg:p-20 bg-surface-container-high/50">
-                  <form className="space-y-8">
-                    <div className="relative group">
-                      <input className="w-full bg-transparent border-0 border-b border-outline py-3 focus:ring-0 focus:border-primary peer transition-all placeholder-transparent" id="name" placeholder="Nome" type="text"/>
-                      <label className="absolute left-0 top-3 text-on-surface-variant font-label text-sm uppercase tracking-widest transition-all peer-focus:-top-4 peer-focus:text-primary peer-focus:text-[10px] peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[10px]" htmlFor="name">Seu Nome</label>
-                    </div>
-                    <div className="relative group">
-                      <input className="w-full bg-transparent border-0 border-b border-outline py-3 focus:ring-0 focus:border-primary peer transition-all placeholder-transparent" id="email" placeholder="Email" type="email"/>
-                      <label className="absolute left-0 top-3 text-on-surface-variant font-label text-sm uppercase tracking-widest transition-all peer-focus:-top-4 peer-focus:text-primary peer-focus:text-[10px] peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[10px]" htmlFor="email">Email</label>
-                    </div>
-                    <div className="relative group">
-                      <textarea className="w-full bg-transparent border-0 border-b border-outline py-3 focus:ring-0 focus:border-primary peer transition-all placeholder-transparent resize-none" id="message" placeholder="Mensagem" rows={4}></textarea>
-                      <label className="absolute left-0 top-3 text-on-surface-variant font-label text-sm uppercase tracking-widest transition-all peer-focus:-top-4 peer-focus:text-primary peer-focus:text-[10px] peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[10px]" htmlFor="message">Resumo / Intenção do Projeto</label>
-                    </div>
-                    <button className="w-full bg-primary text-on-primary font-headline font-bold py-5 rounded-md hover:bg-primary-container transition-all tracking-[0.2rem] uppercase text-sm" type="submit">
-                      ENVIAR
-                    </button>
-                  </form>
+                  <p className="text-[10px] font-label uppercase tracking-widest text-outline mb-2">E-mail</p>
+                  <p className="font-headline font-bold text-lg text-on-surface">{data.contact.email}</p>
+                </a>
+
+                <a href={`https://wa.me/5541987114770`} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center p-8 bg-surface-bright/50 rounded-xl border border-outline-variant/5 hover:border-primary/30 hover:bg-surface-bright transition-all group">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform mb-6">
+                    <span className="material-symbols-outlined text-3xl">call</span>
+                  </div>
+                  <p className="text-[10px] font-label uppercase tracking-widest text-outline mb-2">Telefone / WhatsApp</p>
+                  <p className="font-headline font-bold text-lg text-on-surface">{data.contact.phone}</p>
+                </a>
+
+                <div className="flex flex-col items-center p-8 bg-surface-bright/50 rounded-xl border border-outline-variant/5">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6">
+                    <span className="material-symbols-outlined text-3xl">share_location</span>
+                  </div>
+                  <p className="text-[10px] font-label uppercase tracking-widest text-outline mb-2">Localidade</p>
+                  <p className="font-headline font-bold text-lg text-on-surface text-center">{data.contact.location}</p>
                 </div>
               </div>
             </div>
@@ -412,8 +389,8 @@ function App() {
       {/* Footer */}
       <footer className="bg-[#091328] w-full py-12 border-t border-[#40485d]/20">
         <div className="flex flex-col md:flex-row justify-between items-center px-8 gap-4 max-w-7xl mx-auto">
-          <div className="font-body text-[10px] tracking-[0.1rem] uppercase text-[#6d758c]">
-            © 2026 PROJETADO POR {data.name}
+          <div className="font-body text-[10px] tracking-[0.1rem] text-[#6d758c]">
+            © {new Date().getFullYear()} Matheus Marques Eiras. Todos os direitos reservados.
           </div>
           <div className="flex gap-8">
             <a className="font-body text-[10px] tracking-[0.1rem] uppercase text-[#6d758c] hover:text-[#a1faff] transition-colors" href={data.contact.github}>GITHUB</a>

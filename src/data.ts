@@ -2,7 +2,7 @@ export const data = {
   name: "MATHEUS MARQUES EIRAS",
   title: "Desenvolvedor Full Stack",
   about: {
-    greeting: "Arquiteto de Fluxo Digital",
+    greeting: "Desenvolvendo novas soluções para desafios complexos.",
     headline: "TRANSFORMANDO CÓDIGO EM EXPERIÊNCIA",
     description: [
       "Sou estudante de Ciência da Computação no Instituto Federal do Paraná, focado no desenvolvimento de sistemas robustos e escaláveis.",
