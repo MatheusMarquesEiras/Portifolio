@@ -393,9 +393,9 @@ function App() {
             © {new Date().getFullYear()} Matheus Marques Eiras. Todos os direitos reservados.
           </div>
           <div className="flex gap-8">
-            <a className="font-body text-[10px] tracking-[0.1rem] uppercase text-[#6d758c] hover:text-[#a1faff] transition-colors" href={data.contact.github}>GITHUB</a>
-            <a className="font-body text-[10px] tracking-[0.1rem] uppercase text-[#6d758c] hover:text-[#a1faff] transition-colors" href={data.contact.linkedin}>LINKEDIN</a>
-            <a className="font-body text-[10px] tracking-[0.1rem] uppercase text-[#6d758c] hover:text-[#a1faff] transition-colors" href={data.contact.huggingface}>HUGGINGFACE</a>
+            <a className="font-body text-[10px] tracking-[0.1rem] uppercase text-[#6d758c] hover:text-[#a1faff] transition-colors" href={data.contact.github} target="_blank" rel="noopener noreferrer">GITHUB</a>
+            <a className="font-body text-[10px] tracking-[0.1rem] uppercase text-[#6d758c] hover:text-[#a1faff] transition-colors" href={data.contact.linkedin} target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+            <a className="font-body text-[10px] tracking-[0.1rem] uppercase text-[#6d758c] hover:text-[#a1faff] transition-colors" href={data.contact.huggingface} target="_blank" rel="noopener noreferrer">HUGGINGFACE</a>
           </div>
         </div>
       </footer>
