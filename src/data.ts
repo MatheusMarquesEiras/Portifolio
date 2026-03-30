@@ -66,6 +66,48 @@ export const data = {
       tags: ["C#", "SQL", "APIs REST"],
       icons: ["TbBrandCSharp", "SiSqlite", "SiInsomnia"],
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop"
+    },
+    {
+      title: "PROJETO EM DESENVOLVIMENTO",
+      description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
+      tags: ["?"],
+      icons: ["TbQuestionMark"],
+      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE"
+    },
+    {
+      title: "PROJETO EM DESENVOLVIMENTO",
+      description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
+      tags: ["?"],
+      icons: ["TbQuestionMark"],
+      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE"
+    },
+    {
+      title: "PROJETO EM DESENVOLVIMENTO",
+      description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
+      tags: ["?"],
+      icons: ["TbQuestionMark"],
+      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE"
+    },
+    {
+      title: "PROJETO EM DESENVOLVIMENTO",
+      description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
+      tags: ["?"],
+      icons: ["TbQuestionMark"],
+      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE"
+    },
+    {
+      title: "PROJETO EM DESENVOLVIMENTO",
+      description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
+      tags: ["?"],
+      icons: ["TbQuestionMark"],
+      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE"
+    },
+    {
+      title: "PROJETO EM DESENVOLVIMENTO",
+      description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
+      tags: ["?"],
+      icons: ["TbQuestionMark"],
+      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE"
     }
   ],
   languages: [

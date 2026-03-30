@@ -30,9 +30,13 @@ const IconRenderer = ({ iconName, className }: IconRendererProps) => {
 function App() {
   const [activeSection, setActiveSection] = useState('about');
   const [visibleSections, setVisibleSections] = useState<string[]>([]);
+  const [showAllProjects, setShowAllProjects] = useState(false);
   const categories = Array.from(new Set(data.stacks.map(s => s.category)));
 
+  const visibleProjects = showAllProjects ? data.projects : data.projects.slice(0, 6);
+
   useEffect(() => {
+    // ... (rest of useEffect remains same)
     // Observer for Active Section (Menu) - More sensitive to top of viewport
     const activeOptions = {
       root: null,
@@ -237,8 +241,8 @@ function App() {
                 <span className="font-label text-sm uppercase tracking-[0.2rem] text-primary">Projetos em Destaque</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-                {data.projects.map((project, i) => (
-                  <div key={i} className={`group ${i % 2 !== 0 ? 'md:mt-12' : ''}`}>
+                {visibleProjects.map((project, i) => (
+                  <div key={i} className={`group ${i % 3 === 1 ? 'md:mt-12' : i % 3 === 2 ? 'md:mt-24' : ''}`}>
                     <div className="aspect-square bg-surface-container overflow-hidden rounded-lg mb-8 relative">
                       <img alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-60" src={project.image} />
                       <div className="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
@@ -250,7 +254,12 @@ function App() {
                         ))}
                       </div>
                     </div>
-                    <h3 className="text-2xl font-headline font-bold mb-3 group-hover:text-primary transition-colors">{project.title}</h3>
+                    <div className="relative inline-block mb-3">
+                      <h3 className="text-2xl font-headline font-bold group-hover:text-primary transition-colors pb-1">
+                        {project.title}
+                      </h3>
+                      <span className="absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-300 w-0 group-hover:w-full" />
+                    </div>
                     <p className="text-on-surface-variant leading-relaxed mb-6 text-sm">{project.description}</p>
                     <div className="flex flex-wrap gap-2 mb-6">
                       {project.tags.map((tag, j) => (
@@ -265,6 +274,22 @@ function App() {
                   </div>
                 ))}
               </div>
+
+              {data.projects.length > 6 && (
+                <div className="mt-32 flex justify-center">
+                  <button 
+                    onClick={() => setShowAllProjects(!showAllProjects)}
+                    className="group flex flex-col items-center gap-4 text-primary font-headline font-bold uppercase tracking-widest text-sm hover:brightness-110 transition-all"
+                  >
+                    <div className="w-16 h-16 rounded-full border border-primary/30 flex items-center justify-center group-hover:bg-primary/10 transition-all">
+                      <span className={`material-symbols-outlined text-3xl transition-transform duration-500 ${showAllProjects ? 'rotate-180' : ''}`}>
+                        keyboard_double_arrow_down
+                      </span>
+                    </div>
+                    <span>{showAllProjects ? 'MOSTRAR MENOS' : 'MOSTRAR MAIS'}</span>
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         </section>
