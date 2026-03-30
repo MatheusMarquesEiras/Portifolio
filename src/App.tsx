@@ -182,7 +182,7 @@ function App() {
                   <img 
                     alt="Retrato" 
                     className="w-full h-full object-cover grayscale contrast-125 mix-blend-luminosity hover:grayscale-0 transition-all duration-500" 
-                    src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop"
+                    src="/profile.jpg"
                   />
                 </div>
                 <div className="absolute bottom-6 -left-8 bg-surface-bright/40 backdrop-blur-xl p-6 border border-outline-variant/20 max-w-[240px]">
