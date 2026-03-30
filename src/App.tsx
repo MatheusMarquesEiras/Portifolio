@@ -127,8 +127,8 @@ function App() {
       
       {/* TopNavBar */}
       <header className="fixed top-0 w-full z-50 bg-[#060e20]/80 backdrop-blur-xl shadow-[0_0_40px_rgba(161,250,255,0.06)] border-b border-outline-variant/10">
-        <nav className="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
-          <div className="text-xl font-bold tracking-tighter text-[#dee5ff] font-headline uppercase">
+        <nav className="flex justify-between items-center px-4 sm:px-8 py-6 max-w-7xl mx-auto">
+          <div className="text-lg sm:text-xl font-bold tracking-tighter text-[#dee5ff] font-headline uppercase">
             MATHEUS EIRAS
           </div>
           <div className="hidden md:flex items-center gap-12">
@@ -163,12 +163,12 @@ function App() {
 
       <main className="pt-32">
         {/* Hero Section / About */}
-        <section className="px-8 mb-24 lg:mb-48 scroll-mt-32" id="about">
+        <section className="px-4 sm:px-8 mb-24 lg:mb-48 scroll-mt-32" id="about">
           <div className={getRevealClass('about')}>
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
               <div className="lg:col-span-7">
                 <span className="label-md uppercase tracking-[0.2rem] text-primary mb-6 block font-label">{data.about.greeting}</span>
-                <h1 className="text-5xl md:text-7xl font-headline font-bold leading-none tracking-tighter mb-12">
+                <h1 className="text-3xl sm:text-5xl md:text-7xl font-headline font-bold leading-none tracking-tighter mb-12">
                   {data.about.headline.split(' ').slice(0, -1).join(' ')} <br/>
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
                     {data.about.headline.split(' ').slice(-1)}
@@ -189,7 +189,7 @@ function App() {
                     src="/profile.jpg"
                   />
                 </div>
-                <div className="absolute bottom-6 -left-8 bg-surface-bright/40 backdrop-blur-xl p-6 border border-outline-variant/20 max-w-[240px]">
+                <div className="absolute bottom-6 left-0 sm:-left-8 bg-surface-bright/40 backdrop-blur-xl p-6 border border-outline-variant/20 max-w-[240px]">
                   <p className="font-label text-[10px] tracking-widest uppercase text-primary mb-2">Status Atual</p>
                   <p className="font-headline font-bold text-on-surface italic">"{data.about.status}"</p>
                 </div>
@@ -201,7 +201,7 @@ function App() {
         {/* Technologies Section */}
         <section className="bg-surface-container-low py-24 mb-24 lg:mb-48 scroll-mt-32" id="stacks">
           <div className={getRevealClass('stacks')}>
-            <div className="px-8 max-w-7xl mx-auto">
+            <div className="px-4 sm:px-8 max-w-7xl mx-auto">
               <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
                 <h2 className="text-4xl md:text-5xl font-headline font-bold tracking-tighter uppercase">TECNOLOGIAS</h2>
                 <p className="font-label text-sm uppercase tracking-widest text-outline">Matriz de Conhecimentos</p>
@@ -232,10 +232,10 @@ function App() {
         </section>
 
         {/* Projects Section */}
-        <section className="px-8 mb-24 lg:mb-48 scroll-mt-32" id="projects">
+        <section className="px-4 sm:px-8 mb-24 lg:mb-48 scroll-mt-32" id="projects">
           <div className={getRevealClass('projects')}>
             <div className="max-w-7xl mx-auto">
-              <div className="flex justify-between items-baseline mb-16">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-baseline mb-16 gap-2 md:gap-0">
                 <h2 className="text-4xl md:text-5xl font-headline font-bold tracking-tighter uppercase">PROJETOS</h2>
                 <div className="h-px bg-outline-variant/30 flex-grow mx-8 hidden md:block"></div>
                 <span className="font-label text-sm uppercase tracking-[0.2rem] text-primary">Projetos em Destaque</span>
@@ -302,7 +302,7 @@ function App() {
         {/* Education Section */}
         <section className="bg-surface-container-low py-24 mb-24 lg:mb-48 scroll-mt-32" id="education">
           <div className={getRevealClass('education')}>
-            <div className="px-8 max-w-7xl mx-auto">
+            <div className="px-4 sm:px-8 max-w-7xl mx-auto">
               <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
                 <h2 className="text-4xl md:text-5xl font-headline font-bold tracking-tighter uppercase">FORMAÇÃO</h2>
                 <p className="font-label text-sm uppercase tracking-widest text-outline">Trajetória Acadêmica e Idiomas</p>
@@ -378,7 +378,7 @@ function App() {
         </section>
 
         {/* Contact Section */}
-        <section className="px-8 pb-32 scroll-mt-32" id="contact">
+        <section className="px-4 sm:px-8 pb-32 scroll-mt-32" id="contact">
           <div className={getRevealClass('contact')}>
             <div className="max-w-7xl mx-auto bg-surface-container border border-outline-variant/10 rounded-xl overflow-hidden shadow-[0_0_80px_rgba(161,250,255,0.03)] p-12 lg:p-20">
               <div className="text-center mb-16">
@@ -392,7 +392,7 @@ function App() {
                     <span className="material-symbols-outlined text-3xl">mail</span>
                   </div>
                   <p className="text-[10px] font-label uppercase tracking-widest text-outline mb-2">E-mail</p>
-                  <p className="font-headline font-bold text-lg text-on-surface">{data.contact.email}</p>
+                  <p className="font-headline font-bold text-base sm:text-lg text-on-surface break-all md:break-normal text-center px-4">{data.contact.email}</p>
                 </a>
 
                 <a href={`https://wa.me/5541987114770`} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center p-8 bg-surface-bright/50 rounded-xl border border-outline-variant/5 hover:border-primary/30 hover:bg-surface-bright transition-all group">
@@ -418,7 +418,7 @@ function App() {
 
       {/* Footer */}
       <footer className="bg-[#091328] w-full py-12 border-t border-[#40485d]/20">
-        <div className="flex flex-col md:flex-row justify-between items-center px-8 gap-4 max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-8 gap-4 max-w-7xl mx-auto">
           <div className="font-body text-[10px] tracking-[0.1rem] text-[#6d758c]">
             © {new Date().getFullYear()} Matheus Marques Eiras. Todos os direitos reservados.
           </div>
