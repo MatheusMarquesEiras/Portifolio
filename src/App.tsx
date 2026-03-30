@@ -268,8 +268,13 @@ function App() {
                         </span>
                       ))}
                     </div>
-                    <a className="inline-flex items-center gap-2 text-sm font-label font-bold uppercase tracking-widest text-primary hover:gap-4 transition-all" href="#">
-                      Explorar Protocolo <span className="material-symbols-outlined text-base">arrow_forward</span>
+                    <a 
+                      className="inline-flex items-center gap-2 text-sm font-label font-bold uppercase tracking-widest text-primary hover:gap-4 transition-all" 
+                      href={project.link}
+                      target={project.link.startsWith('http') ? "_blank" : "_self"}
+                      rel={project.link.startsWith('http') ? "noopener noreferrer" : ""}
+                    >
+                      Explorar Projeto <span className="material-symbols-outlined text-base">arrow_forward</span>
                     </a>
                   </div>
                 ))}
@@ -377,7 +382,7 @@ function App() {
           <div className={getRevealClass('contact')}>
             <div className="max-w-7xl mx-auto bg-surface-container border border-outline-variant/10 rounded-xl overflow-hidden shadow-[0_0_80px_rgba(161,250,255,0.03)] p-12 lg:p-20">
               <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-6xl font-headline font-bold tracking-tighter mb-4 italic uppercase">ENTRE EM CONTATO</h2>
+                <h2 className="text-4xl md:text-6xl font-headline font-bold tracking-tighter mb-4 italic uppercase">CONTATO</h2>
                 <p className="font-label text-sm uppercase tracking-widest text-primary">Estou aberto para novas conexões e projetos.</p>
               </div>
               

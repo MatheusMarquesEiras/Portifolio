@@ -47,67 +47,76 @@ export const data = {
   ],
   projects: [
     {
-      title: "BACKEND INFRA V.1",
-      description: "Arquitetura de microsserviços para processamento de dados em larga escala, com foco em resiliência e baixa latência.",
-      tags: ["Python", "Docker", "PostgreSQL"],
-      icons: ["SiPython", "SiDocker", "SiPostgresql"],
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?q=80&w=2000&auto=format&fit=crop"
+      title: "EmilIA",
+      description: "Sistema de Inteligência Artificial desenvolvido para otimização de processos e interação inteligente.",
+      tags: ["Python", "IA", "Machine Learning"],
+      icons: ["SiPython", "TbBrain", "SiOllama"],
+      image: "/EmilIA.jpg",
+      link: "https://github.com/MatheusMarquesEiras/EmilIA#"
     },
     {
-      title: "CORE ENGINE RUST",
-      description: "Processador de baixo nível para sistemas críticos, otimizando o uso de memória e CPU para tarefas de telemetria.",
-      tags: ["Rust", "C++", "Linux"],
-      icons: ["SiRust", "SiCplusplus", "SiLinux"],
-      image: "https://images.unsplash.com/photo-1551288049-bbda38a10ad5?q=80&w=2000&auto=format&fit=crop"
+      title: "bigdata-NER",
+      description: "Modelo de Named Entity Recognition (NER) para identificação de entidades em textos em português e multilíngues, utilizando spaCy e PyTorch com suporte a GPU.",
+      tags: ["Python", "NLP", "PyTorch", "spaCy"],
+      icons: ["SiPython", "SiPytorch", "SiSpacy", "SiNvidia"],
+      image: "https://github.com/MatheusMarquesEiras/bigdata-NER/raw/main/NER.jpg",
+      link: "https://github.com/MatheusMarquesEiras/bigdata-NER"
     },
     {
-      title: "DATA BRIDGE C#",
-      description: "Serviço de integração de dados entre sistemas legado e nuvem, utilizando C# e protocolos de mensageria.",
-      tags: ["C#", "SQL", "APIs REST"],
-      icons: ["TbBrandCSharp", "SiSqlite", "SiInsomnia"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop"
-    },
-    {
-      title: "PROJETO EM DESENVOLVIMENTO",
-      description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
-      tags: ["?"],
-      icons: ["TbQuestionMark"],
-      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE"
+      title: "WorkerAnt",
+      description: "Servidor robusto de upload de arquivos desenvolvido com Flask e PostgreSQL, focado em automação e containerização com Docker.",
+      tags: ["Python", "Flask", "Docker", "PostgreSQL"],
+      icons: ["SiPython", "SiFlask", "SiDocker", "SiPostgresql"],
+      image: "/WorkerAnt.jpg",
+      link: "https://github.com/MatheusMarquesEiras/WorkerAnt"
     },
     {
       title: "PROJETO EM DESENVOLVIMENTO",
       description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
       tags: ["?"],
       icons: ["TbQuestionMark"],
-      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE"
+      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE",
+      link: "#"
     },
     {
       title: "PROJETO EM DESENVOLVIMENTO",
       description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
       tags: ["?"],
       icons: ["TbQuestionMark"],
-      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE"
+      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE",
+      link: "#"
     },
     {
       title: "PROJETO EM DESENVOLVIMENTO",
       description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
       tags: ["?"],
       icons: ["TbQuestionMark"],
-      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE"
+      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE",
+      link: "#"
     },
     {
       title: "PROJETO EM DESENVOLVIMENTO",
       description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
       tags: ["?"],
       icons: ["TbQuestionMark"],
-      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE"
+      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE",
+      link: "#"
     },
     {
       title: "PROJETO EM DESENVOLVIMENTO",
       description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
       tags: ["?"],
       icons: ["TbQuestionMark"],
-      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE"
+      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE",
+      link: "#"
+    },
+    {
+      title: "PROJETO EM DESENVOLVIMENTO",
+      description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
+      tags: ["?"],
+      icons: ["TbQuestionMark"],
+      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE",
+      link: "#"
     }
   ],
   languages: [
