@@ -6,10 +6,10 @@ export const data = {
     headline: "TRANSFORMANDO CÓDIGO EM EXPERIÊNCIA",
     description: [
       "Sou estudante de Ciência da Computação no Instituto Federal do Paraná, focado no desenvolvimento de sistemas robustos e escaláveis.",
-      "Como desenvolvedor Full Stack, minha paixão reside na construção da lógica complexa do back-end e na integração eficiente com interfaces funcionais.",
+      "Especializado no desenvolvimento de backends robustos, foco na resolução de problemas complexos de lógica e na criação de APIs que servem de alicerce para experiências digitais de alto impacto.",
       "Busco minha primeira oportunidade para aplicar conhecimentos em Python, JavaScript, SQL e arquiteturas de sistemas reais."
     ],
-    status: "Otimizando a lógica central de sistemas modernos.",
+    status: "Construindo infraestruturas robustas e APIs eficientes",
     education: "Graduação em Ciência da Computação - IFPR (Previsão Dez/2026)"
   },
   contact: {
@@ -25,20 +25,16 @@ export const data = {
     { name: "Python", category: "Linguagens", icon: "SiPython" },
     { name: "JavaScript", category: "Linguagens", icon: "SiJavascript" },
     { name: "C/C++", category: "Linguagens", icon: "SiCplusplus" },
-    { name: "C#", category: "Linguagens", icon: "TbBrandCSharp" },
-    { name: "Java", category: "Linguagens", icon: "SiOpenjdk" },
     { name: "Rust", category: "Linguagens", icon: "SiRust" },
-    { name: "Golang", category: "Linguagens", icon: "SiGo" },
     // Web & Frameworks
     { name: "React", category: "Web & Frameworks", icon: "SiReact" },
     { name: "Flask", category: "Web & Frameworks", icon: "SiFlask" },
-    { name: "APIs REST", category: "Web & Frameworks", icon: "SiInsomnia" },
     // Ferramentas & Infraestrutura
     { name: "Git", category: "Ferramentas & Infraestrutura", icon: "SiGit" },
     { name: "GitHub", category: "Ferramentas & Infraestrutura", icon: "SiGithub" },
     { name: "Docker", category: "Ferramentas & Infraestrutura", icon: "SiDocker" },
     { name: "Linux", category: "Ferramentas & Infraestrutura", icon: "SiLinux" },
-    { name: "Windows", category: "Ferramentas & Infraestrutura", icon: "FaWindows" },
+    { name: "APIs REST", category: "Ferramentas & Infraestrutura", icon: "SiInsomnia" },
     // Banco de Dados
     { name: "SQL", category: "Banco de Dados", icon: "SiSqlite" },
     { name: "PostgreSQL", category: "Banco de Dados", icon: "SiPostgresql" },
@@ -78,46 +74,6 @@ export const data = {
       image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE",
       link: "#"
     },
-    {
-      title: "PROJETO EM DESENVOLVIMENTO",
-      description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
-      tags: ["?"],
-      icons: ["TbQuestionMark"],
-      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE",
-      link: "#"
-    },
-    {
-      title: "PROJETO EM DESENVOLVIMENTO",
-      description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
-      tags: ["?"],
-      icons: ["TbQuestionMark"],
-      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE",
-      link: "#"
-    },
-    {
-      title: "PROJETO EM DESENVOLVIMENTO",
-      description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
-      tags: ["?"],
-      icons: ["TbQuestionMark"],
-      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE",
-      link: "#"
-    },
-    {
-      title: "PROJETO EM DESENVOLVIMENTO",
-      description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
-      tags: ["?"],
-      icons: ["TbQuestionMark"],
-      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE",
-      link: "#"
-    },
-    {
-      title: "PROJETO EM DESENVOLVIMENTO",
-      description: "Este projeto está em desenvolvimento e trará novas soluções em breve.",
-      tags: ["?"],
-      icons: ["TbQuestionMark"],
-      image: "https://placehold.co/600x600/060e20/a1faff?text=EM+BREVE",
-      link: "#"
-    }
   ],
   languages: [
     { name: "Inglês", level: "Avançado" },

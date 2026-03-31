@@ -31,6 +31,7 @@ function App() {
   const [activeSection, setActiveSection] = useState('about');
   const [visibleSections, setVisibleSections] = useState<string[]>([]);
   const [showAllProjects, setShowAllProjects] = useState(false);
+  const [isCopied, setIsCopied] = useState(false);
   const categories = Array.from(new Set(data.stacks.map(s => s.category)));
 
   const visibleProjects = showAllProjects ? data.projects : data.projects.slice(0, 6);
@@ -340,7 +341,7 @@ function App() {
                 <div className="lg:col-span-5 flex flex-col justify-center">
                   <h3 className="text-4xl md:text-5xl font-headline font-bold tracking-tighter mb-8 italic leading-none uppercase text-[#dee5ff]">PRONTO PARA <br/>CONSTRUIR?</h3>
                   <p className="text-on-surface-variant text-lg leading-relaxed mb-10 max-w-md">
-                    Estou disponível para oportunidades de estágio e projetos Full Stack. Vamos transformar lógicas complexas em sistemas de alta performance.
+                    Estou disponível para oportunidades de estágio e projetos backend. Vamos transformar lógicas complexas em sistemas de alta performance.
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <a 
@@ -387,13 +388,54 @@ function App() {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <a href={`mailto:${data.contact.email}`} className="flex flex-col items-center p-8 bg-surface-bright/50 rounded-xl border border-outline-variant/5 hover:border-primary/30 hover:bg-surface-bright transition-all group">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform mb-6">
-                    <span className="material-symbols-outlined text-3xl">mail</span>
+                <button 
+                  onClick={() => {
+                    navigator.clipboard.writeText(data.contact.email);
+                    setIsCopied(true);
+                    setTimeout(() => setIsCopied(false), 1500);
+                  }}
+                  className={`flex flex-col items-center p-8 bg-surface-bright/50 rounded-xl border transition-all duration-300 group ${
+                    isCopied 
+                      ? 'border-green-500/50 bg-green-500/5' 
+                      : 'border-outline-variant/5 hover:border-primary/30 hover:bg-surface-bright'
+                  }`}
+                >
+                  <div className={`w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 mb-6 ${
+                    isCopied 
+                      ? 'bg-green-500/20 text-green-400' 
+                      : 'bg-primary/10 text-primary group-hover:scale-110'
+                  }`}>
+                    <div className="relative w-8 h-8 flex items-center justify-center">
+                      <span className={`material-symbols-outlined text-3xl absolute transition-all duration-300 ${
+                        isCopied 
+                          ? 'opacity-0 scale-50 rotate-12' 
+                          : 'opacity-100 scale-100 rotate-0 group-hover:opacity-0 group-hover:scale-50 group-hover:rotate-12'
+                      }`}>
+                        mail
+                      </span>
+                      <span className={`material-symbols-outlined text-3xl absolute transition-all duration-300 ${
+                        !isCopied 
+                          ? 'opacity-0 scale-50 -rotate-12 group-hover:opacity-100 group-hover:scale-100 group-hover:rotate-0' 
+                          : 'opacity-0 scale-50'
+                      }`}>
+                        content_copy
+                      </span>
+                      <span className={`material-symbols-outlined text-3xl absolute transition-all duration-300 ${
+                        isCopied 
+                          ? 'opacity-100 scale-100 rotate-0' 
+                          : 'opacity-0 scale-50 -rotate-12'
+                      }`}>
+                        check
+                      </span>
+                    </div>
                   </div>
-                  <p className="text-[10px] font-label uppercase tracking-widest text-outline mb-2">E-mail</p>
-                  <p className="font-headline font-bold text-base sm:text-lg text-on-surface break-all md:break-normal text-center px-4">{data.contact.email}</p>
-                </a>
+                  <p className={`text-[10px] font-label uppercase tracking-widest mb-2 transition-colors duration-300 ${isCopied ? 'text-green-400' : 'text-outline'}`}>
+                    {isCopied ? 'Copiado!' : 'E-mail'}
+                  </p>
+                  <p className={`font-headline font-bold text-base sm:text-lg break-all md:break-normal text-center px-4 transition-colors duration-300 ${isCopied ? 'text-green-400' : 'text-on-surface'}`}>
+                    {data.contact.email}
+                  </p>
+                </button>
 
                 <a href={`https://wa.me/5541987114770`} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center p-8 bg-surface-bright/50 rounded-xl border border-outline-variant/5 hover:border-primary/30 hover:bg-surface-bright transition-all group">
                   <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform mb-6">
