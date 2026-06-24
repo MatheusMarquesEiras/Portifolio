@@ -437,7 +437,7 @@ function App() {
                   </p>
                 </button>
 
-                <a href={`https://wa.me/5541987114770`} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center p-8 bg-surface-bright/50 rounded-xl border border-outline-variant/5 hover:border-primary/30 hover:bg-surface-bright transition-all group">
+                <a href={`https://wa.me/5541985032002`} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center p-8 bg-surface-bright/50 rounded-xl border border-outline-variant/5 hover:border-primary/30 hover:bg-surface-bright transition-all group">
                   <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform mb-6">
                     <span className="material-symbols-outlined text-3xl">call</span>
                   </div>
