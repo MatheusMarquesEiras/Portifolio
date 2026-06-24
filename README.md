@@ -26,11 +26,15 @@ O portfólio foi construído utilizando as seguintes tecnologias:
 
 ## 📂 Projetos em Destaque
 
-Alguns dos projetos apresentados no portfólio:
+- **bigdata-NER:** Modelo de Reconhecimento de Entidades (NER) para português com PyTorch, spaCy e Transformers.
+- **EmilIA:** Assistente de voz com LLM local (Whisper, Ollama e Piper).
+- **WorkAnt:** Transferência de arquivos entre computadores na rede doméstica.
 
-1. **BACKEND INFRA V.1:** Arquitetura de microsserviços para processamento de dados em larga escala.
-2. **CORE ENGINE RUST:** Processador de baixo nível para sistemas críticos e telemetria.
-3. **DATA BRIDGE C#:** Serviço de integração entre sistemas legados e nuvem.
+### 🧭 Roadmap (em desenvolvimento)
+
+- **Backend Infra V.1:** arquitetura de microsserviços para processamento de dados.
+- **Core Engine (Rust):** processador de baixo nível para sistemas críticos.
+- **Data Bridge (C#):** integração entre sistemas legados e nuvem.
 
 ## 🔧 Como Executar o Projeto Localmente
 
