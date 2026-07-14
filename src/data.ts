@@ -35,6 +35,7 @@ export const data = {
     { name: "Docker", category: "Ferramentas & Infraestrutura", icon: "SiDocker" },
     { name: "Linux", category: "Ferramentas & Infraestrutura", icon: "SiLinux" },
     { name: "APIs REST", category: "Ferramentas & Infraestrutura", icon: "SiInsomnia" },
+    { name: "Claude Code (Dev. Assistido por IA)", category: "Ferramentas & Infraestrutura", icon: "SiClaude" },
     // Banco de Dados
     { name: "SQL", category: "Banco de Dados", icon: "SiSqlite" },
     { name: "PostgreSQL", category: "Banco de Dados", icon: "SiPostgresql" },
@@ -65,6 +66,14 @@ export const data = {
       icons: ["SiPython", "SiFlask", "SiDocker", "SiPostgresql"],
       image: "/WorkerAnt.jpg",
       link: "https://github.com/MatheusMarquesEiras/WorkerAnt"
+    },
+    {
+      title: "FALLOUT PC",
+      description: "Ferramenta de limpeza de cache de dev multiplataforma (Windows/macOS/Linux): detona cache acumulado de pip, npm, cargo, Docker, git, Hugging Face e temporários do sistema, com preview antes de apagar qualquer coisa.",
+      tags: ["Bash", "CLI", "Docker", "Multiplataforma"],
+      icons: ["SiGnubash", "TbTerminal", "SiDocker", "TbTrash"],
+      image: "/FalloutPC.png",
+      link: "https://github.com/MatheusMarquesEiras/fallout-pc"
     },
     {
       title: "PROJETO EM DESENVOLVIMENTO",
