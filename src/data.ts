@@ -60,10 +60,10 @@ export const data = {
       link: "https://github.com/MatheusMarquesEiras/bigdata-NER"
     },
     {
-      title: "WorkerAnt",
-      description: "Servidor robusto de upload de arquivos desenvolvido com Flask e PostgreSQL, focado em automação e containerização com Docker.",
-      tags: ["Python", "Flask", "Docker", "PostgreSQL"],
-      icons: ["SiPython", "SiFlask", "SiDocker", "SiPostgresql"],
+      title: "WorkAnt",
+      description: "Transferência de pastas na rede doméstica: backend FastAPI + SQLAlchemy e frontend React + TypeScript, com upload em chunks, testes automatizados, Docker e CI.",
+      tags: ["Python", "FastAPI", "React", "TypeScript", "Docker"],
+      icons: ["SiPython", "SiFastapi", "SiReact", "SiTypescript", "SiDocker"],
       image: "/WorkerAnt.jpg",
       link: "https://github.com/MatheusMarquesEiras/WorkerAnt"
     },
